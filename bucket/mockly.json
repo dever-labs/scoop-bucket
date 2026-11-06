@@ -1,0 +1,24 @@
+{
+    "version": "0.16.0",
+    "description": "Mock server for HTTP, gRPC, Redis, Kafka, and 17 other protocols",
+    "homepage": "https://github.com/dever-labs/mockly",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/dever-labs/mockly/releases/download/v0.16.0/mockly-windows-amd64.exe#/mockly.exe",
+            "hash": "a6417b9ec4d137cbe554a37641e52e8952b936aa3d43ca1ea990c5cd7138434c"
+        }
+    },
+    "bin": "mockly.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/dever-labs/mockly/releases/download/v$version/mockly-windows-amd64.exe#/mockly.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}

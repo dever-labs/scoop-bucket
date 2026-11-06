@@ -1,0 +1,23 @@
+# Describes this repository in devhub (https://hub.dever.dk), dever-labs'
+# developer portal. devhub's GitHub discovery reads this file from the
+# default branch.
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: scoop-bucket
+  namespace: devtools
+  title: Scoop bucket
+  description: >
+    The dever-labs Scoop bucket (bucket/) — Windows manifests for dever-labs
+    apps, updated by each app's release workflow.
+  annotations:
+    github.com/project-slug: dever-labs/scoop-bucket
+  tags: [scoop, windows]
+  links:
+    - url: https://scoop.sh
+      title: Scoop
+spec:
+  type: distribution
+  lifecycle: production
+  owner: group:devtools/engineering
+  system: system:devtools/distribution

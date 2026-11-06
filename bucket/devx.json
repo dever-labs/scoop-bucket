@@ -1,0 +1,31 @@
+{
+    "version": "1.0.1",
+    "description": "Tool to help speed up local development and keep it consistent across a team",
+    "homepage": "https://github.com/dever-labs/devx",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/dever-labs/devx/releases/download/v1.0.1/devx-windows-amd64.exe#/devx.exe",
+            "hash": "eb13afa1322d4e104d146a266a9d1b4e852011b5c9a17c28900f1c4c7a83365e"
+        },
+        "arm64": {
+            "url": "https://github.com/dever-labs/devx/releases/download/v1.0.1/devx-windows-arm64.exe#/devx.exe",
+            "hash": "febe2e40830dc6a8583d1a66c3038f21bcfe7e66ff89a1117bfc15999c8d36d9"
+        }
+    },
+    "bin": "devx.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/dever-labs/devx/releases/download/v$version/devx-windows-amd64.exe#/devx.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/dever-labs/devx/releases/download/v$version/devx-windows-arm64.exe#/devx.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}

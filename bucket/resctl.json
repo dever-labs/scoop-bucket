@@ -1,0 +1,24 @@
+{
+    "version": "1.0.0",
+    "description": "Minimal CLI to get, set and toggle display resolution on Windows, Linux and Mac",
+    "homepage": "https://github.com/dever-labs/resctl",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/dever-labs/resctl/releases/download/v1.0.0/resctl.exe",
+            "hash": "abb9db48ce633a5ce5f2cf992aaf3f5f0afb1e970f07c69562ecab515ae9044c"
+        }
+    },
+    "bin": "resctl.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/dever-labs/resctl/releases/download/v$version/resctl.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}

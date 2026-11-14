@@ -12,6 +12,8 @@ metadata:
     apps, updated by each app's release workflow.
   annotations:
     github.com/project-slug: dever-labs/scoop-bucket
+    # No docs site on purpose: the README is all there is (devhub "Has docs").
+    devhub/docs: none
   tags: [scoop, windows]
   links:
     - url: https://scoop.sh
